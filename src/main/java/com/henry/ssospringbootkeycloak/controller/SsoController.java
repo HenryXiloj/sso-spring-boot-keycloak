@@ -11,11 +11,11 @@ import java.security.Principal;
 import java.util.Date;
 
 @Controller
-public class WebController {
+public class SsoController {
 
     private final CustomerDAO customerDAO;
 
-    public WebController(CustomerDAO customerDAO) {
+    public SsoController(CustomerDAO customerDAO) {
         this.customerDAO = customerDAO;
     }
 
