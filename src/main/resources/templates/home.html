@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:include="layout :: headerFragment">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1>Home</h1>
+    </div>
+    <div>
+
+        <div class="well">
+
+            <b>Clients: </b><a th:href="@{/customers}">customers</a>
+        </div>
+        <div class="well">
+            <b>Info: </b><a th:href="@{/info}">User</a>
+        </div>
+    </div>
+    <div id="pagefoot" th:include="layout :: footerFragment">Footer
+    </div>
+    <a href="/logout">Logout</a>
+</div>
+<!-- container -->
+
+</body>
+</html>
